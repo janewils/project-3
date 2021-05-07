@@ -1,44 +1,45 @@
 body {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../images/elcapitan.jpg");
-    background-attachment: fixed;
+  color: white;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/elcapitan.jpg");
+  background-attachment: fixed;
 }
-  
+
 .blob {
-    padding: 20px;
-    margin: 10px;
-    max-width: 600px;
-    color: grey;
-    background: rgba(255, 255, 255, 0.6);}
+  padding: 20px;
+  margin: 10px;
+  max-width: 600px;
+  color: black;
+  background: rgba(255, 255, 255, 0.6);
+}
 
 .turd {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20%;
-    margin-bottom: 20%;
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 h1 {
-    font-family: 'Cousine', monospace;
-    font-size: xx-large;
-    text-align: center;
+  font-family: "Cousine", monospace;
+  font-size: xx-large;
+  text-align: center;
 }
 
-h3, p {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
+h3,
+p {
+  font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
 footer {
-    text-align: center;
-    font-size: small;
-}  
+  text-align: center;
+  font-size: small;
+}
