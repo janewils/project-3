@@ -1,26 +1,41 @@
+/* 
+  Code from intersection observer.
+
+  Threshold is 0.25 to trigger the intersection.
+*/
+
 let options = {
     root: null,
     threshold: 0.25,
   };
 
-function intersectionHandler(entries, observer) {
-entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-    entry.target.classList.add("active");
-    console.log(`slide-${entry.target.dataset.index}`);
-    document.querySelector(
-        ".circle"
-    ).className = `circle slide-${entry.target.dataset.index}`;
-    } else {
-    entry.target.classList.remove("active");
-    }
-});
+/* 
+  intersectionHandler adds active when entry
+  is intersecting and removes it when entry
+  stops intersecting
+*/
+
+  function intersectionHandler(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        } else {
+            entry.target.classList.remove("active");
+        }
+    });
 }
+
+/* 
+  intersectionHandler adds active when entry
+  is intersecting and removes it when entry
+  stops intersecting
+*/
 
 let observer = new IntersectionObserver(intersectionHandler, options);
 
-let images = document.querySelectorAll("img");
+let blobs = document.querySelectorAll(".blob");
 
-images.forEach((image) => {
-    observer.observe(image);
-  });
+blobs.forEach((blob) => {
+  observer.observe(blob);
+});
+
