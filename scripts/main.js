@@ -39,3 +39,7 @@ blobs.forEach((blob) => {
   observer.observe(blob);
 });
 
+/* 
+  Measure the path length
+*/
+

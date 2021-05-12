@@ -12,16 +12,6 @@ body {
   background-attachment: fixed;
 }
 
-.logo {
-  width: 75px;
-  height: 75px;
-  border-radius: 100px;
-  background-image: url("../images/elcapitan.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .blob {
   padding: 20px;
   margin: 10px;
@@ -68,4 +58,24 @@ h3, p {
 footer {
   text-align: center;
   font-size: small;
+}
+
+.route {
+  stroke-dasharray: 419.1141357421875;
+  stroke-dashoffset: 419.1141357421875;
+  animation: sign 4s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Mobile Rules */ 
+@media (max-width: 767px) {
+  .blob {
+    max-width: 75%;
+  }
 }
