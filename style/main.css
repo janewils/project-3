@@ -4,21 +4,29 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.column {
   background-size: cover;
-  background-position: center;
-  background-image: url("../images/elcapitan.jpg");
+  background-image: url("../images/pleasework.png");
   background-attachment: fixed;
+}
+
+.column2 {
+  background-color: lightcoral;
 }
 
 .blob {
   padding: 20px;
   margin: 10px;
-  max-width: 600px;
+  max-width: 75%;
   color: dimgray;
   background: rgba(255, 255, 255, 0.6);
-
   display: block;
   width: 100%;
   opacity: 0;
@@ -58,24 +66,22 @@ h3, p {
 footer {
   text-align: center;
   font-size: small;
+  background-color:lightslategray;
 }
 
 .route {
   stroke-dasharray: 419.1141357421875;
   stroke-dashoffset: 419.1141357421875;
-  animation: sign 4s ease;
+  animation: sign 8s ease;
   animation-fill-mode: forwards;
+  position: fixed;
+  height: 146%;
+  width: 54px;
 }
+
 
 @keyframes sign {
   to {
     stroke-dashoffset: 0;
-  }
-}
-
-/* Mobile Rules */ 
-@media (max-width: 767px) {
-  .blob {
-    max-width: 75%;
   }
 }

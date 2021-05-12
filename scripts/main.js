@@ -38,8 +38,3 @@ let blobs = document.querySelectorAll(".blob");
 blobs.forEach((blob) => {
   observer.observe(blob);
 });
-
-/* 
-  Measure the path length
-*/
-
