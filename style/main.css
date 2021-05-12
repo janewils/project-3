@@ -61,20 +61,40 @@ h3, p {
 
 .route {
   stroke-dasharray: 419.1141357421875;
-  stroke-dashoffset: 419.1141357421875;
-  animation: sign 8s ease;
-  animation-fill-mode: forwards;
+  stroke-dashoffset: -419.1141357421875;
+  /* animation: sign 8s ease;
+  animation-fill-mode: forwards; */
   position: fixed;
   width: 50px;
   bottom: 0;
   left: 30px;
 }
 
-@keyframes sign {
+.one {
+  stroke-dashoffset: -300;
+}
+
+.two {
+  stroke-dashoffset: -200;
+}
+
+.three {
+  stroke-dashoffset: -150;
+}
+
+.four {
+  stroke-dashoffset: -100;
+}
+
+.five {
+  stroke-dashoffset: -50;
+}
+
+/* @keyframes sign {
   to {
     stroke-dashoffset: 0;
   }
-}
+} */
 
 .bgimage {
   width: auto;
@@ -103,3 +123,4 @@ h3, p {
     width: 59px;
   }
 }
+

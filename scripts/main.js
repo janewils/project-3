@@ -19,6 +19,10 @@ let options = {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("active");
+            console.log(entry.target.dataset.pitch)
+            if (entry.target.dataset.pitch) {
+              document.querySelector("svg").classList.replace(/(one|two|three|four|five)/g, entry.target.dataset.pitch);
+            }
         } else {
             entry.target.classList.remove("active");
         }
@@ -38,3 +42,4 @@ let blobs = document.querySelectorAll(".blob");
 blobs.forEach((blob) => {
   observer.observe(blob);
 });
+
