@@ -21,7 +21,9 @@ let options = {
             entry.target.classList.add("active");
             console.log(entry.target.dataset.pitch)
             if (entry.target.dataset.pitch) {
-              document.querySelector("svg").classList.replace(/(one|two|three|four|five)/g, entry.target.dataset.pitch);
+              const purge = ["one", "two", "three", "four", "five"]; // define all the pitch classes
+              document.querySelector("svg").classList.remove(...purge); // remove all the pitch classes
+              document.querySelector("svg").classList.add(entry.target.dataset.pitch); // add only the current pitch
             }
         } else {
             entry.target.classList.remove("active");
